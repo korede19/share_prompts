@@ -10,11 +10,14 @@ export const connectToDB = async () => {
     return;
   }
   try {
-    await mongoose.connect(process.env.MONGODB_URI, {
-      dbName: "share_prompt",
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
-    });
+    await mongoose.connect(
+      "mongodb+srv://admin:5prddtz8sJ4ErX4Y@cluster0.heuqu.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0",
+      {
+        dbName: "share_prompt",
+        useNewUrlParser: true,
+        useUnifiedTopology: true,
+      }
+    );
 
     if (isConnected === true) {
       console.log("MongoDB is connected");
