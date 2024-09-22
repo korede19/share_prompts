@@ -1,6 +1,6 @@
-import PromptCard from "./promptCard";
+import PromptCard from "./PromptCard";
 
-const Profile = ({ name, desc, data, handleEdit, handleDelete }) => {
+const Profilepg = ({ name, desc, data, handleEdit, handleDelete }) => {
   return (
     <section className="w-full">
       <h1 className="head_text text-left">
@@ -22,4 +22,4 @@ const Profile = ({ name, desc, data, handleEdit, handleDelete }) => {
   );
 };
 
-export default Profile;
+export default Profilepg;

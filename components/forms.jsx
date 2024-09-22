@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-const Forms = ({ type, post, setPost, submitting, handleSubmit }) => {
+const Form = ({ type, post, setPost, submitting, handleSubmit }) => {
   return (
     <section className="w-full max-w-full flex-start flex-col">
       <h1 className="head_text text-left">
@@ -31,7 +31,7 @@ const Forms = ({ type, post, setPost, submitting, handleSubmit }) => {
 
         <label>
           <span className="font-satoshi font-semibold text-base text-gray-700">
-            Tag{" "}
+            Field of Prompt{" "}
             <span className="font-normal">
               (#product, #webdevelopment, #idea, etc.)
             </span>
@@ -64,4 +64,4 @@ const Forms = ({ type, post, setPost, submitting, handleSubmit }) => {
   );
 };
 
-export default Forms;
+export default Form;
