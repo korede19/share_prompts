@@ -1,6 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
-import PromptCard from "./PromptCard";
+import PromptCard from "./PromptCard.jsx";
 import { ThreeDots } from "react-loader-spinner";
 
 const PromptCardList = ({ data, handleTagClick }) => {
